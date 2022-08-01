@@ -13,7 +13,7 @@ import Swift
 import SystemConfiguration
 import UIKit
 import _Concurrency
-open class LBFraudSDK {
+open class LBFraudSDKiOS {
   required public init(apikey: Swift.String)
   public func transactionPost(transactionId: Swift.String, userId: Swift.String, extraData: [Swift.String : Any])
   public func permissionStatus() -> Swift.String
