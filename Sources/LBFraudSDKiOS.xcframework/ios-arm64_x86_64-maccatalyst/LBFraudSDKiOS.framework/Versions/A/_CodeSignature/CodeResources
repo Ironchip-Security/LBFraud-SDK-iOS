@@ -36,14 +36,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6Odve4eyEkNwEq89OaEJlZTh9mTKBk9achpSUM2aAwI=
+			4gkKqpCXK3o/4kqcB0sYNu7ciZymxcGWWn6djwFrUpA=
 			</data>
 		</dict>
 		<key>Modules/LBFraudSDKiOS.swiftmodule/arm64-apple-ios-macabi.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			d4v981NNHPvBcyYkbwyv3YA06igTfNCD1roeNQhq/KU=
+			6sIhNK4V349Z1AxyWpeUiN9Y4xmBhoF/YTv8S2HxbW8=
 			</data>
 		</dict>
 		<key>Modules/LBFraudSDKiOS.swiftmodule/x86_64-apple-ios-macabi.swiftdoc</key>
@@ -57,14 +57,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8L3FgOlmSnfbzXE0+l6QYHHfXC0w3uSmT4P3Bo5urA0=
+			h6UrDR3s+o0un9mHCe/bMsULqtbhZTCH0oTT1c/aUQU=
 			</data>
 		</dict>
 		<key>Modules/LBFraudSDKiOS.swiftmodule/x86_64-apple-ios-macabi.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Z/DcbM0RSmMwuG3uExwCiDHgCjKisGKf1csrZ5Rh9vU=
+			m4LvJGUHaWtgX7XyMl3KwNwoN+NqernvrX2ByQdPcB0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
