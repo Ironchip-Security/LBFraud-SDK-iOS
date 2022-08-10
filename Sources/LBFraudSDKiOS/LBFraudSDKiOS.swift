@@ -8,7 +8,7 @@ public struct LBFraudSDKiOS {
         self.apiKey = apikey
     }
     
-    public func sendTransaction(url: String, transactionId: String, userId: String, extraData: [String:Any]) -> String {
+    public func sendTransaction(url: String?, transactionId: String, userId: String, extraData: [String:Any]) -> String {
         let generatedJSON = getTransactionJSON(transactionId: transactionId, userId: userId, extraData: extraData)
         
         let headers:[String:String] = ["Content-Type":"application/json;charset=UTF-8","Accept":"application/json","Authorization":apiKey]
