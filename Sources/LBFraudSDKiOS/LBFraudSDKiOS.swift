@@ -1,7 +1,7 @@
 import IronchipCommonsIos
 import CoreLocation
 
-public struct MyLibrary {
+public struct LBFraudSDKiOS {
     var apiKey: String
     
     public init(apikey: String) {
