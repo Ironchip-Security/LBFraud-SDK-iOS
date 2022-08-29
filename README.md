@@ -4,16 +4,6 @@ A swift package as LBFraudSDK
 
 # SwiftPackage
 
-### upload to repo
-the Package.swift must be on a root project,
-to upload just commit into your public repo,
-tag your commit and push the tag.
-
-```bash
-git tag 1.0.0
-git push origin 1.0.0
-```
-
 ### Setup
 To be able to use This SwiftPackage you will need to add to the target of your app in Singing and Capabilities add **access Wifi Information**.
 
@@ -40,7 +30,7 @@ In this case https://gitlab.com/ironchip_dev/location_based_anti-fraud/mobility_
 
 A new window appears, in dependency rule you can select an exact version, a range of versions, a branch ... in this case to test it i choose exact version 1.0.0 and add the package finally to use it.
 
-### Use in app
+### Example
 ```swift
 import LBFraudSDKiOS
 ...
@@ -50,15 +40,16 @@ let ironchipLBFraud = LBFraudSDK.init(apikey: "XXXXXX.XXXXXXXXXXXXXXXXXXXXXXXXXX
 //UserID (required): User identifier
 //ExtraData (optional): extra information for analysis 
 // {
-//   "concept": "Concept title",
-//   "amount": 20,
-// } two types of operations: login and transaction, if the operation is login send concept and empty amount
+//   "extra_value_1": "Example extra value 1",
+//   "extra_value_2": 50,
+//   "extra_value_3": [1,2,3]
+// }
  
 let data: [String: Any] = [
-    "concept": "example1",
-    "amount": "2",
-    "operation": "transaction"
+    "concept": "Book august",
+    "amount": 60,
+    "operation": "booking"
 ]
 
-ironchipLBFraud.transactionPost(transactionId: "9273dghsg8hj", userId: "pepe", extraData: data)
+ironchipLBFraud.transactionPost(transactionId: "9273dghsg8hj", userId: "john.doe@gmail.com", extraData: data)
 ```
