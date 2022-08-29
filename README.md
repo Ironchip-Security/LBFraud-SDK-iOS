@@ -36,6 +36,7 @@ import LBFraudSDKiOS
 ...
 let ironchipLBFraud = LBFraudSDK.init(apikey: "XXXXXX.XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
 //Call Ironchip Location Based Antifraud to Analyze transaction
+//Host url (optional) you can send the url as nil the dafault enviroment was setted as production.
 //TransactionID (required,unique): transaction identifier request for fraud results
 //UserID (required): User identifier
 //ExtraData (optional): extra information for analysis 
@@ -51,5 +52,5 @@ let data: [String: Any] = [
     "operation": "booking"
 ]
 
-ironchipLBFraud.transactionPost(transactionId: "9273dghsg8hj", userId: "john.doe@gmail.com", extraData: data)
+  let transaction: String = ironchipLBFraud.sendTransaction(url: "https://testing.transaction.lbfraud.ironchip.com/transaction", transactionId: "random_identifier_generated", userId: "john.doe@gmail.com", extraData: data)
 ```
