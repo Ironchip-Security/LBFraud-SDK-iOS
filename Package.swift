@@ -25,6 +25,6 @@ let package = Package(
         .binaryTarget(
                      name: "LBFraudSDKiOS",
                      url: "https://nexus6.kydom.net/repository/XCFrameworks/LBFraudSDKiOS/LBFraudSDKiOS.xcframework.zip",
-                     checksum: "6ae5cf0f4bf32efcf85c0300620715456d986cc12a2ba7077e823339f45576a9")
+                     checksum: "026f7dca1348466ab7776d72293d395f55bef604f0184d78cf5776e3b3311c4b")
     ]
 )
