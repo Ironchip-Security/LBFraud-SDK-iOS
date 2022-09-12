@@ -34,7 +34,7 @@ A new window appears, in dependency rule you can select an exact version, a rang
 ```swift
 import LBFraudSDKiOS
 ...
-let ironchipLBFraud = LBFraudSDK.init(apikey: "XXXXXX.XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+let ironchipLBFraud = LBFraudSDK.init(apikey: "XXXXXX.XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", url: "")
 //Call Ironchip Location Based Antifraud to Analyze transaction
 //TransactionID (required,unique): transaction identifier request for fraud results
 //UserID (required): User identifier
