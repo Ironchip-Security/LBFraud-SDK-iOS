@@ -29,7 +29,7 @@ A pop up will open and in search or enter url copy the repositorie url and press
 
 In this case https://github.com/Ironchip-Security/LBFraud-SDK-iOS.git
 
-A new window appears, in dependency rule you can select an exact version, a range of versions, a branch ... in this case to test it i choose exact version 1.1.5 and add the package finally to use it.
+A new window appears, in dependency rule you can select an exact version, a range of versions, a branch ... in this case to test it i choose exact version 1.1.6 and add the package finally to use it.
 
 ### Example
 ```swift
