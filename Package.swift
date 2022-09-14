@@ -21,10 +21,10 @@ let package = Package(
         .binaryTarget(
                      name: "IronchipCommonsIos",
                      url: "https://nexus6.kydom.net/repository/XCFrameworks/IronchipCommonsIos/IronchipCommonsIos.xcframework.zip",
-                    checksum: "8472c17158cd57e683811f7f84590fff0100d9a1f777ad675ca36eb513835faa"),
+                    checksum: "27baa6fad9007e3d7aa120d53bf4f823fdff02957b560b99209172e40b87eda4"),
         .binaryTarget(
                      name: "LBFraudSDKiOS",
                      url: "https://nexus6.kydom.net/repository/XCFrameworks/LBFraudSDKiOS/LBFraudSDKiOS.xcframework.zip",
-                     checksum: "026f7dca1348466ab7776d72293d395f55bef604f0184d78cf5776e3b3311c4b")
+                     checksum: "ca813a2fa9c6f0b638e0f7a85712fdbad7fa7bc6286cf9d1027d0a79a4460d70")
     ]
 )
