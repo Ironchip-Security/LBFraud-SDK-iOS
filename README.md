@@ -12,6 +12,7 @@ Then in the Target of the app in **info** tab you have to add the key values of 
 1. Privacy - Location Always and When In Use Usage Description, and insert the description as string
 2. Privacy - Location When In Use Usage Description, and insert the description as string
 3. Privacy - Location Always Usage Description, and insert the description as string
+4. LSApplicationQueriesSchemes, and insert the description (this permission is to be able to know if the device is jailbroken)
 
 First of all you have to request Location Permission in your app
 
@@ -26,9 +27,9 @@ To import this dependency, in xcode go to the root of your application for examp
 
 A pop up will open and in search or enter url copy the repositorie url and press add package button.
 
-In this case https://gitlab.com/ironchip_dev/location_based_anti-fraud/mobility_team/ironchip_lbfraud_sdk_ios.git
+In this case https://github.com/Ironchip-Security/LBFraud-SDK-iOS.git
 
-A new window appears, in dependency rule you can select an exact version, a range of versions, a branch ... in this case to test it i choose exact version 1.0.0 and add the package finally to use it.
+A new window appears, in dependency rule you can select an exact version, a range of versions, a branch ... in this case to test it i choose exact version 1.1.5 and add the package finally to use it.
 
 ### Example
 ```swift
@@ -50,6 +51,11 @@ let data: [String: Any] = [
     "amount": 60,
     "operation": "booking"
 ]
-
-ironchipLBFraud.transactionPost(transactionId: "9273dghsg8hj", userId: "john.doe@gmail.com", extraData: data)
+do {
+    let traceabilityID: String = try ironchipLBFraud.transactionPost(transactionId: "random_identifier_generated", userId: "john.doe@gmail.com", extraData: data)
+} catch let error as TransactionError {
+    print("ERROR: message: \(error.message), code: \(error.code)")
+} catch let error {
+    ...
+}
 ```

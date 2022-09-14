@@ -3,6 +3,17 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [1.1.5] - 2022-09-14 - nowadays
+### Changed
+ - Rename commons Services
+ ### Added
+ - In commons throw custom errors, and in Fraud rethrow them
+
+## [1.1.4] - 2022-09-12 - 2022-09-14
+### Changed
+ ### Added
+ - Add CHANGELOG file to the project
+ 
 ## [1.1.3] - 2022-09-12 - nowadays
 ### Changed
  - Pass url parameter to constructor not sendTransaction method
