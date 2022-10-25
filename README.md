@@ -35,8 +35,12 @@ A new window appears, in dependency rule you can select an exact version, a rang
 ```swift
 import LBFraudSDKiOS
 ...
-let ironchipLBFraud = LBFraudSDK.init(apikey: "XXXXXX.XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", url: "")
+let ironchipLBFraud = LBFraudSDK.init(apikey: "XXXXXX.XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+// In case you desire to target a diferent enviroment:
+// let ironchipLBFraud = LBFraudSDK.init(apikey: "XXXXXX.XXXXXXXXXXXXXXXXXXXXX", url: "https://[ENVIROMENT].transaction.lbfraud.ironchip.com/transaction")
+
 //Call Ironchip Location Based Antifraud to Analyze transaction
+
 //TransactionID (required,unique): transaction identifier request for fraud results
 //UserID (required): User identifier
 //ExtraData (optional): extra information for analysis 
@@ -51,11 +55,10 @@ let data: [String: Any] = [
     "amount": 60,
     "operation": "booking"
 ]
-do {
-    let traceabilityID: String = try ironchipLBFraud.transactionPost(transactionId: "random_identifier_generated", userId: "john.doe@gmail.com", extraData: data)
-} catch let error as TransactionError {
-    print("ERROR: message: \(error.message), code: \(error.code)")
-} catch let error {
-    ...
-}
+ ironchipLBFraud.sendTransaction(transactionId: "random_identifier_generated", userId: "john.doe@gmail.com", extraData: data) { error in
+             if (error != nil) {
+                 print(error?.code ?? 0)
+                 print(error?.message ?? "error")
+             } 
+         }
 ```
