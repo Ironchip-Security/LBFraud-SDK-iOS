@@ -2,7 +2,6 @@
 All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
-
 ## [1.1.6] - 2022-09-14 - nowadays
 ### Added
 ### Changed
