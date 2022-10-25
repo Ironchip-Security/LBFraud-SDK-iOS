@@ -2,7 +2,12 @@
 All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
-
+## [1.1.7] - 2022-10-25 - nowadays
+### Added
+### Changed
+ - Change url from nexus to github
+### Removed
+ - Unnecesary prints
 ## [1.1.6] - 2022-09-14 - nowadays
 ### Added
 ### Changed
