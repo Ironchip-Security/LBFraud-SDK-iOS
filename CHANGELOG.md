@@ -1,44 +1,59 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
-## [Unreleased]
-## [1.1.7] - 2022-10-25 - nowadays
+# [Unreleased]
+## [1.2.0] - 2022-11-16 - nowadays
+### Added
+ - Debug Logs
+### Changed
+ - Some custom errors
+### Removed
+ - Network errors, now throw the generic not custom ones
+
+## [1.1.8] - 2022-10-26 - 2022-11-16
+### Added
+### Changed
+ - Change transaction Model
+### Removed
+
+## [1.1.7] - 2022-10-25 - nowadays
 ### Added
 ### Changed
  - Change url from nexus to github
 ### Removed
  - Unnecesary prints
-## [1.1.6] - 2022-09-14 - nowadays
+
+## [1.1.6] - 2022-09-14 - 2022-10-25
 ### Added
 ### Changed
 ### Removed
  - Unnecesary prints
 
-## [1.1.5] - 2022-09-14 - 2022-09-14
+## [1.1.5] - 2022-09-14 - 2022-09-14
 ### Added
  - In commons throw custom errors, and in Fraud rethrow them
 ### Changed
  - Rename commons Services
 ### Removed
 
-## [1.1.4] - 2022-09-12 - 2022-09-14
+## [1.1.4] - 2022-09-12 - 2022-09-14
 ### Added
  - Add CHANGELOG file to the project
 ### Changed
 ### Removed
 
-## [1.1.3] - 2022-09-12 - nowadays
+## [1.1.3] - 2022-09-12 - nowadays
 ### Added
 ### Changed
- - Pass url parameter to constructor not sendTransaction method
+ - Pass url parameter to constructor not in sendTransaction method
 
-## [1.1.2] - 2022-09-03 - 2022-09-12
+## [1.1.2] - 2022-09-03 - 2022-09-12
 ### Added
 ### Changed
     - Change nexus repository name of .xcframework.zip
 ### Removed
 
-## [1.1.1] - 2022-08-27 - 2022-09-03
+## [1.1.1] - 2022-08-27 - 2022-09-03
 ### Added
     - Now the project have two .xcframework one from Commons and the other from LBFraud
 ### Changed

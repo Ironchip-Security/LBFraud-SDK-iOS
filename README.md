@@ -5,6 +5,13 @@ A swift package as LBFraudSDK
 # SwiftPackage
 
 ### Setup
+
+#### Supported Versions
+
+| Platform | Suported versions |
+| --- | --- |
+| iOS | 13.0+ |
+
 To be able to use This SwiftPackage you will need to add to the target of your app in Singing and Capabilities add **access Wifi Information**.
 
 Then in the Target of the app in **info** tab you have to add the key values of location permission.
@@ -29,36 +36,47 @@ A pop up will open and in search or enter url copy the repositorie url and press
 
 In this case https://github.com/Ironchip-Security/LBFraud-SDK-iOS.git
 
-A new window appears, in dependency rule you can select an exact version, a range of versions, a branch ... in this case to test it i choose exact version 1.1.6 and add the package finally to use it.
+A new window appears, in dependency rule you can select an exact version, a range of versions, a branch ... in this case to test it i choose exact version 1.2.0 and add the package finally to use it.
 
-### Example
+### Usage
 ```swift
 import LBFraudSDKiOS
 ...
+
+// Replace apikey with the desired generated api key.
 let ironchipLBFraud = LBFraudSDK.init(apikey: "XXXXXX.XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
 // In case you desire to target a diferent enviroment:
 // let ironchipLBFraud = LBFraudSDK.init(apikey: "XXXXXX.XXXXXXXXXXXXXXXXXXXXX", url: "https://[ENVIROMENT].transaction.lbfraud.ironchip.com/transaction")
 
 //Call Ironchip Location Based Antifraud to Analyze transaction
 
-//TransactionID (required,unique): transaction identifier request for fraud results
-//UserID (required): User identifier
-//ExtraData (optional): extra information for analysis 
-// {
-//   "extra_value_1": "Example extra value 1",
-//   "extra_value_2": 50,
-//   "extra_value_3": [1,2,3]
-// }
- 
-let data: [String: Any] = [
+let extraData: [String: Any] = [
     "concept": "Book august",
     "amount": 60,
     "operation": "booking"
 ]
- ironchipLBFraud.sendTransaction(transactionId: "random_identifier_generated", userId: "john.doe@gmail.com", extraData: data) { error in
-             if (error != nil) {
-                 print(error?.code ?? 0)
-                 print(error?.message ?? "error")
-             } 
-         }
+
+//TransactionID (required,unique): transaction identifier request for fraud results
+//UserID (required): User identifier
+//ExtraData (optional): extra information for analysis 
+// The sendTransaction can be provided with 2 callbacks, one is executed when the transaction is finished
+// and the other one is called in case an error did occure during the transaction process.
+ironchipLBFraud.sendTransaction(transactionId: "random_identifier_generated", userId: "john.doe@gmail.com", extraData: extraData, finish: {
+        // Add here any code you want to be executed after the transaction has finished.
+    }, onError: {(err) in
+        // Add here any code you want to perform in case of an error
+        // during the transaction.
+        
+        // example:
+        //if(err is TransactionError) {
+        //    let transactionError = err as! TransactionError
+
+        //    print(transactionError.traceability_id)
+        //    print(transactionError.message)
+        //    print(transactionError.http_code)
+        //    print(transactionError.code)
+        //} else {
+        //    print("NetworkError: ", err)                
+        //}
+    })
 ```
