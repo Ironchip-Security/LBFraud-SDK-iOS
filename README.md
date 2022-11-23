@@ -46,7 +46,13 @@ import LBFraudSDKiOS
 // Replace apikey with the desired generated api key.
 let ironchipLBFraud = LBFraudSDK.init(apikey: "XXXXXX.XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
 // In case you desire to target a diferent enviroment:
-// let ironchipLBFraud = LBFraudSDK.init(apikey: "XXXXXX.XXXXXXXXXXXXXXXXXXXXX", url: "https://[ENVIROMENT].transaction.lbfraud.ironchip.com/transaction")
+// let ironchipLBFraud = LBFraudSDK.init(apikey: "XXXXXX.XXXXXXXXXXXXXXXXXXXXX", environment: Environment.Testing)
+
+//public enum Environment: String {
+//    case Production = ""
+//    case Testing = "testing."
+//    case Development = "dev."
+//}
 
 //Call Ironchip Location Based Antifraud to Analyze transaction
 

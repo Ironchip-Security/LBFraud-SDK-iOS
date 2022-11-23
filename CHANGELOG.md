@@ -2,7 +2,15 @@
 All notable changes to this project will be documented in this file.
 
 # [Unreleased]
-## [1.2.0] - 2022-11-16 - nowadays
+## [1.2.1] - 2022-11-22 - nowadays
+### Added 
+### Changed 
+  - Class name refactorization.
+  - Changed the tags on the logs to match the refactorization.
+  - Fraud constructor no longer supports a url host, it only allow to select the desired environment.
+  - GPS service, throw error when permission is not granted or Location service is disabled
+### Removed 
+## [1.2.0] - 2022-11-16 - 2022-11-23
 ### Added
  - Debug Logs
 ### Changed
