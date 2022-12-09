@@ -2,7 +2,14 @@
 All notable changes to this project will be documented in this file.
 
 # [Unreleased]
-## [1.2.2] - 2022-11-30 - nowadays
+## [1.2.3] - 2022-12-09 - nowadays
+### Added 
+### Changed 
+  - Fixed issue with the fingerprint id.
+  - Handle external HTTP calls
+### Removed
+
+## [1.2.2] - 2022-11-30 - 2022-12-09
 ### Added 
 ### Changed 
   - Change some property of the device in the transaction model.
