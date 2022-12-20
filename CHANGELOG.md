@@ -2,7 +2,14 @@
 All notable changes to this project will be documented in this file.
 
 # [Unreleased]
-## [1.2.3] - 2022-12-09 - nowadays
+## [1.2.4] - 2022-12-20 - nowadays
+### Added 
+### Changed 
+  - Fixed the problem when sending the application to apple store
+  - Fixed problem with location service logs for iOS 13 versions
+### Removed
+
+## [1.2.3] - 2022-12-09 - 2022-12-20
 ### Added 
 ### Changed 
   - Fixed issue with the fingerprint id.
