@@ -2,7 +2,13 @@
 All notable changes to this project will be documented in this file.
 
 # [Unreleased]
-## [1.2.4] - 2022-12-20 - nowadays
+## [1.2.5] - 2023-02-02 - nowadays
+### Added 
+### Changed 
+  - Changed transaction model to add the gps and wifi permissions and if they are granted.
+  - Changed transaction model to add if the gps and wifi providers are enabled.
+### Removed
+## [1.2.4] - 2022-12-20 - 2023-02-02
 ### Added 
 ### Changed 
   - Fixed the problem when sending the application to apple store
