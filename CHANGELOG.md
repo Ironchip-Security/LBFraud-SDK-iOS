@@ -2,7 +2,12 @@
 All notable changes to this project will be documented in this file.
 
 # [Unreleased]
-## [1.2.5] - 2023-02-02 - nowadays
+## [1.2.6] - 2023-03-15 - nowadays
+### Added
+  - Added methods on the device service to retrieve SIM information.
+### Changed 
+### Removed
+## [1.2.5] - 2023-02-02 - 2023-03-15
 ### Added 
 ### Changed 
   - Changed transaction model to add the gps and wifi permissions and if they are granted.
