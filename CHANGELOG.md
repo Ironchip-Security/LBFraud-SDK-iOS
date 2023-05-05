@@ -2,7 +2,16 @@
 All notable changes to this project will be documented in this file.
 
 # [Unreleased]
-## [1.2.6] - 2023-03-15 - nowadays
+## [1.2.8] - 2023-05-5 - nowadays
+### Added
+### Changed 
+### Removed
+  - Removed methods on the device service to retrieve SIM information.
+## [1.2.7] - 2023-03-23 - 2023-05-5
+### Added
+### Changed 
+### Removed
+## [1.2.6] - 2023-03-15 - 2023-03-23
 ### Added
   - Added methods on the device service to retrieve SIM information.
 ### Changed 
