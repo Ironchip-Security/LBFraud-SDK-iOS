@@ -2,7 +2,14 @@
 All notable changes to this project will be documented in this file.
 
 # [Unreleased]
-## [1.2.8] - 2023-05-5 - nowadays
+
+## [1.2.9] - 2023-05-18 - nowadays 
+### Added
+  - Added sdk version into the transaction model.
+### Changed 
+### Removed
+  - Removed methods on the device service to retrieve SIM information.
+## [1.2.8] - 2023-05-5 - 2023-05-18
 ### Added
 ### Changed 
 ### Removed
