@@ -20,11 +20,11 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .binaryTarget(
                      name: "IronchipCommonsIos",
-                     url: "https://github.com/Ironchip-Security/Commons-IOS/releases/download/v1.2.9/IronchipCommonsIos.xcframework.zip",
-                    checksum: "218e511ff33f0207632ca985e2f3c8a7711be66779b735193bd6adb74ee35ef6"),
+                     url: "https://github.com/Ironchip-Security/Commons-IOS/releases/download/v1.2.10/IronchipCommonsIos.xcframework.zip",
+                    checksum: "edc5821544df652380740240472eb742ae0ed866f35242823371192658f2cdd0"),
         .binaryTarget(
                      name: "LBFraudSDKiOS",
-                     url: "https://github.com/Ironchip-Security/LBFraud-IOS/releases/download/v1.2.9/LBFraudSDKiOS.xcframework.zip",
-                     checksum: "f70a2fc2cac70691478a40b6eb4a2f61c7520001470492504875a2e104c840de")
+                     url: "https://github.com/Ironchip-Security/LBFraud-IOS/releases/download/v1.2.10/LBFraudSDKiOS.xcframework.zip",
+                     checksum: "b913dc6191ec525423985cd63e726189792fa3199e7c19cffe1ec0482c624a25")
     ]
 )

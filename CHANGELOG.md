@@ -3,7 +3,13 @@ All notable changes to this project will be documented in this file.
 
 # [Unreleased]
 
-## [1.2.9] - 2023-05-18 - nowadays 
+## [1.2.10] - 2023-10-11 - nowadays 
+### Added
+  - Added method on the device service to retrieve if device is in call.
+  - Added method on the signals service to retrieve network type.
+### Changed 
+### Removed
+## [1.2.9] - 2023-05-18 - 2023-10-11 
 ### Added
   - Added sdk version into the transaction model.
 ### Changed 
